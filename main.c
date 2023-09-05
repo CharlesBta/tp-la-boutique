@@ -5,21 +5,21 @@ int main() {
     int sodaPrice = 200;
     int cakePrice = 400;
     int selectedPrice;
-    char chose;
+    char choose;
 
     printf("Quel produit voulez vous? p,s ou g: ");
-    scanf("%c", &chose);
+    scanf("%c", &choose);
 
-    if(chose == 'p'){
+    if(choose == 'p'){
         selectedPrice = applePrice;
     }
-    if(chose == 's'){
+    if(choose == 's'){
         selectedPrice = sodaPrice;
     }
-    if(chose == 'g'){
+    if(choose == 'g'){
         selectedPrice = cakePrice;
     }
-    if(chose != 'p' && chose != 's' && chose != 'g'){
+    if(choose != 'p' && choose != 's' && choose != 'g'){
         printf("Erreur");
         return 0;
     }
